@@ -1,0 +1,20 @@
+;; Time set
+(display-time-mode 1);;Display time always
+(setq display-time-24hr-format t)  ;;Display time stype
+(setq display-time-day-and-date t)  ;;display day , week and date
+
+;;Set toolbars
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
+
+;;Hightlight current line
+(global-hl-line-mode 1)
+
+
+;;auto complete
+(add-to-list 'load-path "~/.emacs.d/download/auto-complete")
+(add-to-list 'load-path "~/.emacs.d/download/popup-el")
+(add-to-list 'load-path "~/.emacs.d/download/fuzzy-el")
+(require 'auto-complete-config)
+(ac-config-default)
